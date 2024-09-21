@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <div class="title">Personal Details</div>
+    <form>
+        <label for="salutation">Salutation</label>
+        <select id="salutation" name="salutation">
+            <option value="">--None--</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+        </select>
+
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label>Gender:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+</div>
+
+</body>
+</html>
